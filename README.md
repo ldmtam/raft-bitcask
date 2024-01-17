@@ -1,6 +1,6 @@
 # RAFT-BITCASK
 
-This repository provides the `raftbitcask` package. The package exports the `BadgerStore` which is an implementation of both a `LogStore` and `StableStore`.
+This repository provides the `raftbitcask` package. The package exports the `BitcaskStore` which is an implementation of both a `LogStore` and `StableStore`.
 
 It is meant to be used as a backend for the `raft` [package here](https://github.com/hashicorp/raft).
 
