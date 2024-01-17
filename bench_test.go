@@ -27,7 +27,7 @@ func BenchmarkBitcaskStore_LastIndex(b *testing.B) {
 	raftbench.LastIndex(b, store)
 }
 
-func BenchmarkBadgerStore_GetLog(b *testing.B) {
+func BenchmarkBitcaskStore_GetLog(b *testing.B) {
 	store, path := testBitcaskStore(b)
 	defer func() {
 		store.Close()
@@ -47,7 +47,7 @@ func BenchmarkBitcaskStore_StoreLog(b *testing.B) {
 	raftbench.StoreLog(b, store)
 }
 
-func BenchmarkBadgerStore_StoreLogs(b *testing.B) {
+func BenchmarkBitcaskStore_StoreLogs(b *testing.B) {
 	store, path := testBitcaskStore(b)
 	defer func() {
 		store.Close()
@@ -87,7 +87,7 @@ func BenchmarkBitcaskStore_Get(b *testing.B) {
 	raftbench.Get(b, store)
 }
 
-func BenchmarkBadgerStore_SetUint64(b *testing.B) {
+func BenchmarkBitcaskStore_SetUint64(b *testing.B) {
 	store, path := testBitcaskStore(b)
 	defer func() {
 		store.Close()
